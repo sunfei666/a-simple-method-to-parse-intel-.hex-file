@@ -35,7 +35,7 @@ int file_to_hex(char *file, char *buffer, int len)
 		return -1;
 	}
 
-	memset(buffer, 0, sizeof(len));
+	memset(buffer, 0, len);
 
 	infile=fopen(file, "r");
 	if(infile == NULL) {
